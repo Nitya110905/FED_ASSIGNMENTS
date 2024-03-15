@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").find("span").css({"border" : "2px solid grey" , "color" : "grey"})
+        })
+    </script>
+    <style>
+       body *{
+            border: 2px solid red;
+            padding: 46px;
+            /* height: 500px; */
+            display: inline-block;
+            margin: 5px;
+            color: red;
+            width: 80%;
+        }
+        .two{
+            /* width: 30%; */
+            /* padding-left: 5px; */
+        }
+        .one{
+            width: 93%;
+            height: 660px;
+            /* padding-left: 5px; */
+        }
+        body{
+            border: 2px solid red;
+            height: 765px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">body (great-great-grandparent) <br>
+        <div class="two">div (great-grandparent) <br>
+            <ul>ul (grandparent) <br>
+                <li>li (direct-parent) <br>
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
