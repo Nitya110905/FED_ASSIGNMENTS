@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .one{
+            height: 786px;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: rgb(37, 37, 37);
+            position: relative;
+        }
+        .two{
+            height: inherit;
+            width: 40%;
+            /* background-color: antiquewhite; */
+            background-image: url(https://storage.googleapis.com/lmo/2016/12/4b303519-ipad-on-table-showcase.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .three{
+            height: 600px;
+            width: 60%;
+            /* background-color: aqua; */
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+        .four{
+            height: 100px;
+            /* background-color: antiquewhite; */
+            width: 95%;
+            text-align: right;
+            font-size: xx-large;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .five{
+            height: 27px;
+            width: 5px;
+            background-color: rgb(255, 77, 0);
+            /* border-radius: 30%; */
+            margin-left: 10px;
+            margin-top: 4px;
+            padding: 2px;
+        }
+        .six{
+            height: 100px;
+            margin-top: 50px;
+            /* background-color: antiquewhite; */
+            width: 95%;
+            text-align: right;
+            color: rgb(255, 77, 0);
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        .sev{
+            height: 50px;
+            width: 50%;
+            text-align: start;
+            /* background-color: aquamarine; */
+            margin-left: 450px;
+            color: white;
+            font-size: small;
+            margin-top: 10px;
+        }
+        .eig{
+            height: 50px;
+            width: 50px;
+            border: 5px solid grey;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+        }
+        #i1{
+            top: 270px;
+            left: 890px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/008/659/097/non_2x/eps10-red-monitor-or-pc-icon-in-simple-flat-trendy-modern-style-isolated-on-white-background-free-vector.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #i2{
+            top: 420px;
+            left: 890px;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHBhIUEA8QERERFRYQEA8QDxkOEBAYFhUXFhURFR8YKCkgGyYmIR8fLTUhMS4rMS4uFx8zODMwOCstMCsBCgoKDg0OGxAQGy4jHiYwLy03LS0uLSsrKy03Ky0rNy01NS0xMC0tLi4tLTMtKy0tLTUvLS0tLS0tLS0tLi0tLv/AABEIAOkA2AMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcCBQgDAQT/xABDEAABAgICDQYMBwEBAQAAAAABAAIDEQQSBQYTFhchMVJUkZKT0Qc2QVFTwRQVIjJVYWNxc4GU0iNyoaSx4/BC4ST/xAAbAQEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EAEARAAECAwEJDAkEAwEAAAAAAAABAgMEEQUSFCFRUmGRktETFTEzNEFTcYGhscEGFiIycoLS4fBCY2SiJJPCI//aAAwDAQACEQMRAD8AvFERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEReMWI2DCLnODWjGXONUD1klAeyKP0u22iUYyMaueqG0vGvJ+q8L+aJ7XYHFaFmoKLRXppQmNs+aclUhu0KSdFGL+aJ7XYHFL+aJ7XYHFYvuBlppM72zfRO0EnRRi/mie12BxS/mie12BxS+4GWmkb2zfRO0EnRRi/mie12BxS/mie12BxS+4GWmkb2zfRO0EnRRi/mie12BxS/mie12BxS+4GWmkb2zfRO0EnRRi/mie12BxS/mie12BxS+4GWmkb2zfRO0EnRRi/mie12BxS/mie12BxS+4GWmkb2zfRO0EnRR+iW20SkmQjVD1RGlg15P1W7hRBGhhzXBzTjDmmsD7iFtZEY9KtVF6iPFgRYS0iNVvWioeqIi9moIiIAiIgCIiAIi8osUQYRc4gNaC5xOQACZKA1lsFm4dhaJWf5TnYocMHG49wHSVV9l7NRrLxq0V5lObYYxMZ7h35VjZ+yrrMWTfEdOWSG0/wDLAfJbx9ZK181zk5NujLRPd8c53Fm2YyVYjnJWIvCuLMnVzrzrmM5pNYTSaglqZzSawmk0wgzmk1hNJphBnNJrCaTTCDOaTWE0mmEGc0msJpNMIM5pNYTSaYQZzX77EWajWIjVoTzKc3QzjY/3jvyrWzSay1zmrdNwKeHsa9qtclUXmXgLitfs3Ds1RKzPJc3FEhk42nvB6CtwqVsBZV1h7JMiNnLI9o/6afObw9YCuWFFEaEHNM2uAc0jIQRMFdHJTO7M9r3k4dpxNqyCSkRLn3HcGbGmzNnPVERTSrCIiAIiIAo/btSjRrW4ssr6sP5OPlfpNSBRXlH5tH87f4K0TK0guVMS+BMs9qOm4SLlJ4lW1kmvOaTXLn0E9JpNec0mgPSaTXrY+hvsjTWQoYm+IZNGQZJkn1ATPyUybycOLROlNB6QIRIHzrBboUvFipViV0eZFmJ2Xl1RIr0RV618EUhFZKynWDc6UNyfuTBudKG5P3LbeExk96bTRvvI9J3O+kgs0mttbHa7EsDEbWc17HzqPaJYxlaQchWlmoz4bmOuXJRSbCisisR8NaovOek0mvOaTXk2HpNJrzmk0B6TSa85pNAek0mvOaTQHpWVuWk0o0m1uFPKycOfqaZN/SSp+atbk35sj87v4CsLMVd2VM3mhSW+1FlUXE5PBSVIiK/ONCIiAIiIAoryk82T+dv8FSpRTlK5sH87f4K0TXEu6lJtm8shfEhVAK+zXnNJrmT6Cek0JXnNTrkuoDI8eNFe0OdCLAyYnIurTcPXiGP3rbBhLFejEwVI83MpLQXRVStObHhRPM13J/Cc22iES1wEomMtIHmFW4oXHtnpkOO9osZGcA5wDwyIQ4AkB3m9KxvspvoqNsRftVxLOhwGq2qrhr7q9WLMczPy81OREiXDW4ETjGLzquNMZNkUJvspvoqNsRftS+ym+io2xF+1SL6h59V2wg70zWJuuz6j25TWF9g4cgT+MMgn/wAPVZ+DxMw6irGvspvoqNsRftS+ym+io2xF+1V8xChRn3d0qfK4vJF81KwUhbm1aVw7oxOHSVz4PEzDqKeDxMw6irGvspvoqNsRftS+ym+io2xF+1ab0hZa6iku/ZroW/7WFc+DxMw6ing8TMOoqxr7Kb6KjbEX7UvspvoqNsRftS9IWWuoov2a6Fv+1hXHg8TMdqK8wVZsC2imPjtabGRmguaC4siSAJALsnQtRyoUBkCkQYrGhrope18hKZbVk4+vGcfuXiJKNSGr2urSnC1UMwLRiOjtgxYaNV1aKjmu4ErhoQmaTXnNJqGWhnNWxybc2R+d38BVJNW1ya82B+d38BT7N47s2FNb/JPmTzJWiIr44oIiIAiIgCifKXzYPxG/w5SxRLlN5rn4jO9aJriXdSk2zeWQviQqWaTWM0mubofQjKasHkyiOotFjuMGK5r3MquYys01a1bGZDFMKvK3cugaHAbQ6IxjAGsY0NaB0ABWFnQrp93Xg88BR29MpDgJDVK3flRfGhB6Ras+NSHu8IporOc6qIOITJOesL0omlU3df2Kw0VjecP8VSiS2ZhMWhNhXl6UTSqbuv7EvSiaVTd1/YrDRLzh/iqN+pnGmhNhXl6UTSqbuv7EvSiaVTd1/YrDRLzh/iqN+pnGmhNhXl6UTSqbuv7EvSiaVTd1/YrDRLzh/iqN+pnGmhNhXl6UTSqbuv7EvSiaVTd1/YrDRLzh/iqN+pnGmhNhX1HtVfBpDXeE001XNdVMHEZEHPXlymvdSqNAcIMVrWOfWc9kmitVq4xMY5Kxl+amQG0yiPY8BzHtLXA9IIWHSjVhqxq0r28HWYh2q/d2RYiVua5sC4F4EKBmk1jW70mufod0qUWhlNW3yac1x8R3cqimrc5MubA+I/8AgKdZ6f8At2L5FJb/ACP5k8yWoiK9OLCIiAIiIAojync1z8Rnepcojyoc1j8RnetEzxLuonWZyyF8SFQzSaxmk1zp9BoZTXRTci5yJxD/AHQujRkVrZn6+zzOa9JPdhfN/wAkftmtph2uvh3SG990nKoQJSIyz9602EyBo0fW3ippHozI8q7GOlkrNDpe6a8/F8LsIW7bwU17Iyr7LkROopIEeTaxEiwlc7Hd0rhxU7CH4TIGjR9beKYTIGjR9beKmHi6F2ELdt4J4uhdhC3beC8bnMZaav3Nt82f0C6/2IfhMgaNH1t4phMgaNH1t4qYeLoXYQt23gni6F2ELdt4Jucxlpq/cXzZ/QLr/Yh+EyBo0fW3imEyBo0fW3iph4uhdhC3beCeLoXYQt23gm5zGWmr9xfNn9Auv9iH4TIGjR9beKYTIGjR9beKmHi6F2ELdt4J4uhdhC3beCbnMZaav3F82f0C6/2NRazbTDthiPEOG9lzkTXIM5kylL3KQP8ANPuK8oNGZR51GMbPLVaGz1L1f5p+akMRyIiOWqlfHdDc9VhtuW4q1pgx95zoDl/3Qvs1hP8A3yX2a5ih9OentL2+JlNW9yYc1x8R/cqfmrg5L+aw+K/uU6z+O7FKK30/xPmTwUlyIiuzigiIgCIiAKIcqPNY/FZ3qXqH8qXNU/FZ3rTM8U7qJ1mcrhfEniU/NJrCaTXPH0IyJ/3yXR7ci5uJyf7oXSIyK0s39XZ5nM+knuwvm8GEbtssPSbKRIRotJuFQPD/AMWJCrE1ap8jLKR1rQXoWT9I/uo3BSe2G2WDa+5l2bFJiTq3NodkkDOZHWFqcJVDzKTu2/ct0VIF2t26i9aoQZN9opBakGHVuGi3KLzrz9Zrr0LJ+kf3Ubgl6Fk/SP7qNwWxwlUPMpO7b9yYSqHmUndt+5a6SuX/AGUlbpa3RJqIa69CyfpH91G4JehZP0j+6jcFscJVDzKTu2/cmEqh5lJ3bfuSkrl/2Ubpa3RJqIa69CyfpH91G4JehZP0j+6jcFscJVDzKTu2/cmEqh5lJ3bfuSkrl/2Ubpa3RJqIa69CyfpH91G4JehZP0j+6jcFscJVDzKTu2/cmEqh5lJ3bfuSkrl/2Ubpa3RJqIfttUsPSbFRYhpVJu4eGhv4sSLVILpny8k5jUpK/wA0+5aK162iDbBEe2C2KDDALro0NGMkCUiepb1/mH3KbBRiMS4WqFFOrGWM5YyUdgqlKc2LqOcGn/fJfZrAHKk1zh9Jf7y/nOZzVw8l3NYfFf3Km5q4+S3mqPiv7lNkON7FKO3+SfMngpMERFdHEhERAEREAUP5VOah+IzvUwUO5Veah+KzvWmY4p3UTrM5ZC+JPEpqaTWIOJJqgPoRkSulG+aPkuaZ410s3zR8lZ2d+rs8zmfSXghfN/yfkplj4NNIu0CFFqzq3WE2JVnllWGL/wAXj4gomhUX6ZnBaq26x9Np0WF4FHEEND7pOI5lYmrV83561Hr37NacPqHcFKe+jvcVc9EKmWl7qGjr4azMqqiphXFpJt4gomhUX6ZnBPEFE0Ki/TM4KE3v2a04fUO4Je/ZrTh9Q7gvO6/tr3bTfen8tus4m3iCiaFRfpmcE8QUTQqL9MzgoTe/ZrTh9Q7gl79mtOH1DuCbr+2vdtF6fy26zibeIKJoVF+mZwTxBRNCov0zOChN79mtOH1DuCXv2a04fUO4Juv7a920Xp/LbrOJt4gomhUX6ZnBPEFE0Ki/TM4KE3v2a04fUO4Je/ZrTh9Q7gm6/tr3bRen8tus4nlDsdBoRJgwIUIukHGHDbDLuqdUY1+t/mH3FRi1Gx1NoUaIabSBGDg25gRHPqkF1bL8tSk7/MPuKkQ1qiYKZiqmWXERW3aPzotUXBn0HNc0msZ40mucPpj/AHlMicSubks5qj4r+5UuTiVz8lXNQfFf3KbIcb2FH6Qcj+ZPBSYoiK4OJCIiAIiIAobyr80z8VnepkoZys80j8VnetUfi3dROszlkL4k8SmAcSTWE0mqCh9EM54/91rpaE6vDBGMETB+S5mmpnYPlFj2KoLYboTIwYA1rnktc0DI0kTmB7lNlIzYSrdc5SW1IRZpjFhUq2uBcHDTswU/KF1IqowsRdEZtuTCxF0Rm25Tr7g4+45/eOeyE1m7S10VUYWIuiM23JhYi6Izbcl9wcfcN457ITWbtLXRVRhYi6IzbcmFiLojNtyX3Bx9w3jnshNZu0tdFVGFiLojNtyYWIuiM23JfcHH3DeOeyE1m7S10VUYWIuiM23JhYi6Izbcl9wcfcN457ITWbtLXXnFdUhknEAJk/JVXhYi6IzbctdZzlFj2UoLoTYTILXgtc5ky5wOVoJlKfuWFnISJgU9MsGcc5EVERMd0i+FVIdPH/utJrCsk1TUO6VarUzJxK6OSjmmPiv7lSk1dXJNzSHxX9ymSPGdhR+kHI/mTwUmaIitziAiIgCIiAKMcodDNNtRjgZWARfk0zd+k1J15RoQjQi1wBa4FrgchBEiCvLm3TVbjNsCKsKK2In6VRdBzLkRbe26wbrX7NPhkGofLhPORzSfJPvHT6wtLNUKtVFop9KhxGxGo9i1RcKdRmk1hNJrFD2ZzSawmk0oZM5pNYTSaUBnNJrCaTSgM5pNYTSaUBnNJrCaTSgM5pNYTSaUMGaLCaTSgM8qvjk8oZoVqMAHK8GL8nGbf0kqetRsG62CzLIYBqDy4rxka0Hyj7z0esroODCEGEGtADWgNaBkAAkAFYSMNaq/sOY9I5lLlsBOGt0vgmmqnqiIrE5QIiIAiIgCIiA0dstr0K2Kx9zi4iMcOIBN8N3WOsHpHTqIpO2K1ak2vxiIsMuhzkyM0V2Hqx9B9WIrohecRgiMIcAQcRBxg+oqPGl2xcPApaWfa0WT9ml03Evli0U5+HCcvkySsr/p1o9Ap0SbqIwHrhl0IamkD9F+TBtY/som9coayT8x0DfSOVVMLXJ2JtQouslZXpg2sf2UTeuTBtY/som9cl5RMx69YpTE7Qn1FF1krK9MG1j+yib1yYNrH9lE3rkvKJmHrFKYnaE+oouslZXpg2sf2UTeuTBtY/som9cl5RMw9YpTE7Qn1FF1krK9MG1j+yib1yYNrH9lE3rkvKJmHrFKYnaE+oouslZXpg2sf2UTeuTBtY/som9cl5RMw9YpTE7Qn1FF1krK9MG1j+yib1yYNrH9lE3rkvKJmHrFKYnaE+oouc1vLXbVqTbBGAhQy2HOT4zhUYOvH0n1YyrkoNo9AoT5tojCfaF0UanEj9FIIbBDYA0AAYgBiA9QWxkjh9pdBEmfSRtKQGLXG7m7E26TT2tWvQrXbH3OFjJxxIhEnRHdfqA6B0ayd4iKeiI1KIcvEiPiPV71qq84REWTwEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAeV3Znt2gl3bnt2guNqPRfCY7WMa0udiaMQmZYhj6/wCV6CxrzR2vEFzmPlVe2GXNxuLACQMRJGIZTMdYXu4B2Ld257doJd2Z7doLj59hYzQ2dFi+UC4AQnFwDXVXTAExLvHWF7QbXosWi1zDZDaXCGy7PbAdEdJrqsMPkXYnA+uYlNLnODru7sz27QS7tz27QXINIsBSKPFLXUOPMRDABFHcWuiAkXNpAk44jiCyfa/GhFteDcw5pdOI2oGydEbUfMeS6cN/knH5Kxc5wdeXdme3aCXdme3aC4xuYzRqS5jNGpZuAdnXdme3aCXdme3aC4xuYzRqS5jNGpLgHZ13Znt2gl3Znt2guMbmM0akuYzRqS4B2dd2Z7doJd2Z7doLjG5jNGpLmM0akuAdnXdme3aCXdme3aC4xuYzRqS5jNGpLgHZ13Znt2gl3Znt2guMbmM0akuYzRqS4B2dd2Z7doJd2Z7doLjG5jNGpKjeoakuAdnXdme3aCXdme3aC4yqDqGpfKjeoakuAdnXdme3aCXdme3aC4xqN6hqQtaOhuoJcA7Ou7M9u0Eu7M9u0FxjVb1N1BKrepuoLO5qYqdnXdme3aCLjEMaegal8WLgyesOIYUQOaZOaQ5ruogzB1reOtmeXTEKG0AyhtbiaxhqAwjirEeSMYLcZJx4paFFsMG0g2VbBhtaIAqQ3NfDDopLgWOc9lYgCsA575iQmHjJIFfrods76G6M5sP8SOTMmM+442BnlQgQ15GMtJyEzxyC0CJQEoNub7o4iiwQYgfCifiRJOgvfEiOgiREjWiO8vKBLpmTr7KWc8YWKgwLg1kOjVvB5PLnQw973vaSfOnNvuuQllIWnRYogCIiyYCIiAIiIAiIgCIiAIiIAthYuyrrGteBDhxGvLS5sVtceSTkGTHP19C16IZN0yz1QN/+OhmqZydBmDiaCJdXkzl1n5L6bYi9jQ+jUWIWS8qJDL3OkGCRx5PJyCX8z0iJQG3fZuvGDjRqOTUhw8bJ4oYk0++WU9bW9Uj6NthLHAto1GYWlsjCh3Iya6sWzGORkNketaREoCQm22MYFWpClKRNXG78Ms8rryz6MgGQSXyJbXFiQS0wYEi1zCA14EnAA/8AWMYsmTIo+ixRBU96fSjTqY+I4NaXmZDZ1RiAxTJPR1ovBFkwf//Z);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #i3{
+            top: 570px;
+            left: 890px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://e7.pngegg.com/pngimages/245/644/png-clipart-red-camera-icon-illustration-dxo-one-portrait-graphy-camera-event-graphy-camera-logo-text-rectangle.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two"></div>
+        <div class="three">
+            <div class="four">
+                <div class="five"></div>OUR SERVICES
+            </div>
+            <div class="six">WEB DESIGN
+                <div class="sev">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos in autem temporibus odio velit unde nobis sit? Ex, temporibus.</div>
+            </div>
+            <div class="six">PRINT DESIGN
+                <div class="sev">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non distinctio explicabo maxime veniam nihil impedit atque amet officia et quaerat!</div>
+            </div>
+            <div class="six">PHOTOGRAPHY
+                <div class="sev">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea, placeat quasi voluptas natus atque et nihil. Deserunt, nisi asperiores.</div>
+            </div>
+        </div>
+        <div class="eig" id="i1"></div>
+        <div class="eig" id="i2"></div>
+        <div class="eig" id="i3"></div>
+    </div>
+</body>
+</html>

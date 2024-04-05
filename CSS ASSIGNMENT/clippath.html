@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* position: relative; */
+        }
+        .one{
+            height: 550px;
+            width: 100%;
+            background-image: url(https://i.pinimg.com/originals/64/19/66/641966c6d9bc3648891dd9123969a035.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+            /* filter: brightness(50%); */
+            /* display: flex; */
+            /* background-color: aqua; */
+            position: relative;
+        }
+        .two{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            /* background-color: aqua; */
+            /* filter: brightness(50%); */
+        }
+        .three{
+            height: 25px;
+            width: 2%;
+            background-color: white;
+            font-size: 17px;
+            margin-left: 250px;
+            text-align: center;
+            /* color: transparent; */
+            margin-top: 5px;
+            padding: 2px;
+            mix-blend-mode: lighten;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+        .four{
+            height: 25px;
+            margin-top: 5px;
+            width: 3%;
+            border: 2px solid white;
+            font-size: 20px;
+            /* mix-blend-mode: color-dodge; */
+            color: white;
+            text-align: center;
+            /* padding-top: 0; */
+        }
+        .five{
+            margin-top: 5px;
+            height: 25px;
+            width: 15%;
+            /* background-color: aliceblue; */
+            color: red;
+            text-decoration: underline;
+            text-align: end; 
+        }
+        .six{
+            margin-top: 5px;
+            height: 25px;
+            width: 8%;
+            /* background-color: aliceblue; */
+            text-align: center;
+            color: white;
+        }
+        .seven{
+            margin-top: 5px;
+            height: 25px;
+            width: 7%;
+            /* background-color: aliceblue; */
+            text-align: center;
+            color: white;
+        }
+        .eight{
+            margin-top: 5px;
+            height: 25px;
+            width: 7%;
+            /* background-color: aliceblue; */
+            text-align: center;
+            color: white;
+        }
+        .nine{
+            margin-top: 5px;
+            height: 25px;
+            width: 5%;
+            /* background-color: aliceblue; */
+            text-align: center;
+            color: white;
+        }
+        .ten{
+            margin-top: 5px;
+            height: 25px;
+            width: 7%;
+            /* background-color: aliceblue; */
+            text-align: center;
+            color: white;
+        }
+        .eleven{
+            margin-top: 5px;
+            height: 25px;
+            width: 5%;
+            /* background-color: aliceblue; */
+            color: white;
+            text-align: center;
+        }
+        .twelve{
+            margin-top: 130px;
+            color: azure;
+            width: 100%;
+            height: 20px;
+            /* background-color: aliceblue; */
+            text-align: center;
+        }
+        .thirteen{
+            height: 50px;
+            width: 100%;
+            /* background-color: aliceblue; */
+            margin-top: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            letter-spacing: 7px;
+            /* line-height: 10px; */
+        }
+        .fourteen{
+            margin-top: 10px;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            /* background-color: aliceblue; */
+            color: white;
+        }
+       .fifteen{
+        height: 20px;
+        margin-top: 30px;
+        width: 100%;
+        /* background-color: white; */
+        display: flex;
+       }
+       .sixt{
+        margin-left: 630px;
+        background-color: red;
+        color: white;
+        height: inherit;
+        width: 120px;
+        text-align: center;
+        font-size: 11px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .sevent{
+        margin-left: 20px;
+        /* background-color: antiquewhite; */
+        height: inherit;
+        width: 100px;
+        text-align: center;
+        color: white;
+        font-size: 11px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 2px solid white;
+       }
+       .eighteen{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 525px;
+        left: 747px;
+        /* background-color: antiquewhite; */
+        background-image: url(https://media-www.canadiantire.ca/product/playing/fishing/fishing-lures/0777739/berkley-fusion-19-treble-hooks-size-1-0-06abff20-c45f-468a-b3c0-199bc0c08b38.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* z-index: 5; */
+       }
+       .nineteen{
+        margin-top: 50px;
+        /* background-color: aqua; */
+        height: 150px;
+        width: 100%;
+        display: flex;
+       }
+       .tw{
+        height: inherit;
+        width: 20%;
+        /* background-color: aqua; */
+        margin-left: 20px;
+       }
+       #tw1{
+        margin-left: 150px;
+       }
+       #i1{
+        height: 50px;
+        width: 30%;
+        margin-top: 10px;
+        margin-left: 110px;
+        /* background-color: antiquewhite; */
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        /* border: 2px solid red; */
+        background-image: url(https://c8.alamy.com/comp/2AR7530/infinity-line-red-icon-on-white-background-red-flat-style-vector-illustration-2AR7530.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .twtwo{
+        color: red;
+        /* background-color: aquamarine; */
+        font-size: larger;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+       }
+       hr{
+        margin-left: 125px;
+        margin-top: 10px;
+       }
+       .twthree{
+        height: 50px;
+        /* background-color: antiquewhite; */
+        width: 80%;
+        text-align: center;
+        font-size: small;
+        margin-left: 40px;
+       }
+       #i2{
+        height: 50px;
+        width: 30%;
+        margin-top: 10px;
+        margin-left: 110px;
+        /* background-color: antiquewhite; */
+        border: 1px solid rgb(201, 198, 198);
+        background-image: url(https://cdn.pixabay.com/photo/2016/02/04/12/07/heart-1179072_640.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+       }
+       #i3{
+        height: 50px;
+        width: 30%;
+        margin-top: 10px;
+        margin-left: 110px;
+        /* background-color: antiquewhite; */
+        border: 1px solid rgb(201, 198, 198);
+        background-image: url(https://www.pngitem.com/pimgs/m/265-2651566_icon-of-a-light-bulb-red-light-bulb.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+       }
+       #i4{
+        height: 50px;
+        width: 30%;
+        margin-top: 10px;
+        margin-left: 110px;
+        /* background-color: antiquewhite; */
+        border: 1px solid rgb(201, 198, 198);
+        background-image: url(https://static.vecteezy.com/system/resources/previews/033/082/237/non_2x/comment-line-art-icon-speech-bubble-outline-icon-isolated-on-white-background-symbol-conversation-line-icon-in-trendy-flat-design-vector.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+       }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+        <div class="three"><h3>L</h3></div>
+        <div class="four">ogo</div>
+        <div class="five">HOME</div>
+        <div class="six">ABOUT US</div>
+        <div class="seven">PORTFOLIO</div>
+        <div class="eight">PRICING</div>
+        <div class="nine">TEAM</div>
+        <div class="ten">BLOG</div>
+        <div class="eleven">CONTACT</div>
+        </div>
+        <div class="twelve">Our Clients Are Our First Priority</div>
+        <div class="thirteen"><h1>WELCOME TO SKY</h1></div>
+        <div class="fourteen">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Tempore atque iusto voluptatum eveniet soluta <br> iste in porro, error quae enim.</div>
+        <div class="fifteen">
+            <div class="sixt">GET STARTED NOW</div>
+            <div class="sevent">LEARN MORE</div>
+        </div>
+    </div>
+    <div class="eighteen"></div>
+    <div class="nineteen">
+        <div class="tw" id="tw1">
+            <div class="twone" id="i1"></div>
+            <div class="twtwo">SLEEK DESIGN <br><hr width="20%" align="center"></div>
+            <div class="twthree" style="color: rgb(187, 182, 182);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quaerat?</div>
+        </div>
+        <div class="tw">
+            <div class="twone" id="i2"></div>
+            <div class="twtwo" style="color: grey;">CLEAN CODE <br><hr width="20%" align="center"></div>
+            <div class="twthree" style="color: rgb(187, 182, 182);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quaerat?</div>
+        </div>
+        <div class="tw">
+            <div class="twone" id="i3"></div>
+            <div class="twtwo" style="color: grey;">CREATIVE IDEAS <br><hr width="20%" align="center"></div>
+            <div class="twthree" style="color: rgb(187, 182, 182);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quaerat?</div>
+        </div>
+        <div class="tw">
+            <div class="twone" id="i4"></div>
+            <div class="twtwo" style="color: grey;">FREE SUPPORT <br><hr width="20%" align="center"></div>
+            <div class="twthree" style="color: rgb(187, 182, 182);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quaerat?</div>
+        </div>
+    </div>
+</body>
+</html>

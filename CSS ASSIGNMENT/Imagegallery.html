@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .one{
+            height: 776px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            /* flex-direction: column; */
+            /* color: white    ; */
+        }
+        .two{
+            height: inherit;
+            width: 85%;
+            /* background-color: aqua; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 7px 7px;
+        }
+        #i1{
+            border: 2px solid black;
+            grid-row: 1/4;
+            grid-column: 1/10;
+            background-image: url(https://miro.medium.com/v2/resize:fit:828/format:webp/1*dQI-6Isx90PwGHQwwSnAYA@2x.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #i2{
+            border: 2px solid black;
+            grid-row: 1/4;
+            grid-column: 10/13;
+            background-image: url(https://images.unsplash.com/photo-1557600301-6606064e04ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #i3{
+            border: 2px solid black;
+            grid-row: 4/7;
+            grid-column: 1/3;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://th.bing.com/th/id/OIP.iiR7wwj-utAKZnqoXfiV5gAAAA?rs=1&pid=ImgDetMain);
+            background-position: center;
+        }
+        #i4{
+            border: 2px solid black;
+            grid-row: 4/7;
+            grid-column: 3/11;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg);
+            background-position: center;
+        }
+        #i5{
+            border: 2px solid black;
+            grid-row: 4/7;
+            grid-column: 11/13;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://th.bing.com/th/id/R.5f70245226eb3321d43d54d877d2fc63?rik=ikOfkD56asy1yA&riu=http%3a%2f%2fblog.earlymoments.com%2fwp-content%2fuploads%2f2015%2f09%2ftwo_girls_best_friends_700x493.jpg&ehk=%2feVikANkhBzMXG%2fQJBeYeK2dQ8KJAezg%2bRxy%2brWqcmA%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);
+        }
+        #i6{
+            border: 2px solid black;
+            grid-row: 7/10;
+            grid-column: 1/7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://eskipaper.com/images/black-and-white-photography-portrait-girl-1.jpg);
+        }
+        #i7{
+            border: 2px solid black;
+            grid-row: 7/10;
+            grid-column: 7/13;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://th.bing.com/th/id/OIP.CfnhDfbpzsR02fkRLkY_0wHaFO?rs=1&pid=ImgDetMain);
+        }
+        #i8{
+            border: 2px solid black;
+            grid-row: 10/11;
+            grid-column: 1/5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://th.bing.com/th/id/OIP.0aFCSbgmZvFLnZ6YzomorQAAAA?rs=1&pid=ImgDetMain);
+        }
+        #i9{
+            border: 2px solid black;
+            grid-row: 10/11;
+            grid-column: 5/9;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://th.bing.com/th/id/OIP.xcYADoJ0m_PMSMekfltWpAHaEK?rs=1&pid=ImgDetMain);
+        }
+        #i10{
+            border: 2px solid black;
+            grid-row: 10/11;
+            grid-column: 9/13;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://i.pinimg.com/originals/0d/39/3e/0d393e8992c862a3d257a70b4df6d312.jpg);
+        }
+        .three{
+            height: 500px;
+            width: 15%;
+            /* background-color: antiquewhite; */
+            text-align: right;
+            color: white;
+        }
+        #i11{
+            margin: 20px;
+            /* color: white; */
+        }
+        #i12{
+            margin-right: 20px;
+            color: red;
+            margin-bottom: 10PX;
+        }
+        #i13,#i14,#i15,#i16{
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+        #i17{
+            display: flex;
+            justify-content: end;
+        }
+        #i18,#i19{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+            <div id="i1"></div>
+            <div id="i2"></div>
+            <div id="i3"></div>
+            <div id="i4"></div>
+            <div id="i5"></div>
+            <div id="i6"></div>
+            <div id="i7"></div>
+            <div id="i8"></div>
+            <div id="i9"></div>
+            <div id="i10"></div>
+        </div>
+        <div class="three">
+            <div id="i11"><h3>SHUTTER</h3></div>
+            <div id="i12">Home</div>
+            <div id="i13">Photos</div>
+            <div id="i14">Bio</div>
+            <div id="i15">Blog</div>
+            <div id="i16">Contact</div>
+            <div id="i17"><i class="fa-brands fa-facebook"></i>
+                <div id="i18"><i class="fa-solid fa-dove"></i></div>
+                <div id="i19"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
