@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="two" border="2">
+        <thead>
+            <tr>
+            <th>user id</th>
+            <th>id</th>
+            <th>title</th>
+            <th>body</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <script>
+            let table = document.getElementById("two");
+            let tbody = document.querySelector("tbody")
+            fetch('https://jsonplaceholder.typicode.com/posts',{
+                method:"GET"
+            })
+            .then((res)=> res.json())
+            .then((facts)=>{
+                console.log(facts);
+                for (let elem of facts) {
+                    console.log(elem.userId);
+                    var row = tbody.insertRow()
+                    var userid = row.insertCell(0)
+                    var id = row.insertCell(1)
+                    var title = row.insertCell(2)
+                    var body = row.insertCell(3)
+
+                    userid.textContent = elem.userId
+                    id.textContent = elem.id
+                    title.textContent = elem.title
+                    body.textContent = elem.body
+                    
+                };
+            });
+        </script>
+    </table>
+</body>
+</html>

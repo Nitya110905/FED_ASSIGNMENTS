@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Alert</title>
+</head>
+<body>
+    <!-- Example elements with the class 'my-class' -->
+    <div class="my-class">Element 1</div>
+    <div class="my-class">Element 2</div>
+    <div class="my-class">Element 3</div>
+
+    <!-- Button to trigger the alert -->
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // Select all elements with the class 'my-class'
+        const elements = document.querySelectorAll('.my-class');
+
+        // Add a click event listener to each element
+        elements.forEach(el => {
+            el.addEventListener('click', () => {
+                alert(`Clicked: ${el.textContent}`);
+            });
+        });
+
+        // Add a click event listener to the button
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', () => {
+            alert('Button clicked!');
+        });
+    </script>
+</body>
+</html>

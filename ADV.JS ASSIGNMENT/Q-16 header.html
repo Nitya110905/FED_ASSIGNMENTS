@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .two {
+            width: 100%;
+            height: 70px;
+            background-color: gray;
+            display: flex;
+            /* position: fixed; */
+            /* margin-top: 50px; */
+            /* flex-direction: row; */
+        }
+
+        .two1 {
+            height: inherit;
+            width: 100px;
+            /* background-color: aqua; */
+            margin-left: 50px;
+            background-image: url(https://media.designrush.com/inspiration_images/134805/conversions/_1512076803_93_Nike-mobile.jpg);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            background-size: contain;
+            background-position: center;
+            background-color: grey;
+        }
+
+        .two2 {
+            height: 40px;
+            margin-top: 20px;
+            width: 150px;
+            margin-left: 250px;
+            color: black;
+            /* background-color: aqua; */
+            text-align: center;
+            background-color: grey;
+        }
+
+        .two2:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .two3 {
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 80px;
+            text-align: center;
+            color: black;
+            background-color: grey;
+            /* position: fixed; */
+        }
+
+        .two3:hover {
+            border-bottom: 2px solid black;
+        }
+
+        #ip1 {
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-left: 20px;
+            background-image: url(https://coloringlib.com/wp-content/uploads/2023/08/awesome-nike-shoe-coloring.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            background-color: white;
+        }
+
+        .two4 {
+            margin-left: 20px;
+            height: 50px;
+            margin-top: 15px;
+            background-color: grey;
+            background-image: url(https://media.istockphoto.com/id/1184670036/vector/shopping-cart-line-icon-fast-buy-vector-logo.jpg?s=612x612&w=0&k=20&c=zyExmQoKgH4UZTwMa41Zo9x1TzQYcQy_5zQcHaEL0SQ=);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50px;
+        }
+
+        #two1 {
+            background-image: url(https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f90d.png);
+            height: 30px;
+            margin-top: 25px;
+        }
+        @media screen and (max-width:319px){
+            .two{
+                width: 100%;
+            }
+            .two1 {
+            height: inherit;
+            width: 50px;
+            margin-left: 5px;
+            font-size: x-small;
+            }
+            .two2{
+                width: 30px;
+                margin-left: 5px;
+                font-size: x-small;
+            }
+            .two3{
+                width: 20px;
+                margin-left: 5px;
+                font-size: x-small;
+            }
+            #ip1{
+                height: 20px;
+                width: 90%;
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-left: 10px;
+            }
+            .two4{
+                margin-left: 5px;
+            }
+        }
+</style>
+<body>
+    <div class="two">
+        <div class="two1" onclick="a()"></div>
+        <div class="two2">New & Featured</div>
+        <div class="two3">Men</div>
+        <div class="two3">Women</div>
+        <div class="two3">Kids</div>
+        <div class="two3">Sale</div>
+        <div class="two3">Customize</div>
+        <div class="two3">SNKRS</div>
+        <input type="text" id="ip1" placeholder="    Search">
+        <div class="two4" id="two1"></div>
+        <div class="two4"></div>
+    </div>
+    <script>
+        let a = ()=>{
+            alert("logo clicked")
+        }
+    </script>
+</body>
+</html>

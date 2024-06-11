@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one"></div>
+    <script>
+        function co() {
+          var a = prompt("Enter Your Age")
+            if(a == "" || a == "null" || a<="0"){
+                return false;
+            }
+            else if (a>=18) {
+                return true;
+            } else {
+               if (confirm("Did your parents allow you?")){
+                return true;
+               }
+            }
+        }
+        document.getElementById("one").innerHTML=co()
+    </script>
+</body>
+</html>

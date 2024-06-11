@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    table{
+        margin: 250px;
+        margin-left: 400px;
+    }
+    input{
+        /* height: 30px; */
+        width: 70%;
+        margin-left: 25px;
+    }
+    button{
+        height: 50px;
+        width: 70%;
+        margin-left: 10px;
+        margin-right: 20px;
+        outline: none;
+        border: none;
+        color: black;
+        background-color: antiquewhite;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <table border="1" >
+        <thead>
+            <th>Product Info</th>
+            <th>Quantity</th>
+            <th>Price (Per Unit)</th>
+            <th>Price (Subtotal)</th>
+            <th></th>
+            <tbody>
+                <tr>
+                    <td><img src="C:\Users\Nitya Shah\OneDrive\Desktop\HTML\ADV.JS ASSIGNMENT\img1.jpeg" alt="" height="100px" width="100px"><br>Fortunata Window Hardware-Decorative <br> Holdbacks-Mocha </td>
+                    <td><input type="number" id="i1" onkeyup="sub()" min="0"></td>
+                    <td class="td3">$29.99</td>
+                    <td id="t4">$0</td>
+                    <td rowspan="2"><button onclick="button1()">Clear</button></td>
+                </tr>
+                <tr>
+                    <td><img src="C:\Users\Nitya Shah\OneDrive\Desktop\HTML\ADV.JS ASSIGNMENT\img2.webp" alt="" height="100px" width="100px"><br>Woven Trellis Window Hardware-Clip<br>Rings-Bronze</td>
+                    <td><input type="number" id="i2" onkeyup="sub()" min="0"></td>
+                    <td>$12.99</td>
+                    <td id="td4">$0</td>
+                    <!-- <td><button onclick="button2()">Remove</button></td> -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="total">$0.00</td>
+                    <td></td>
+                </tr>
+                
+            </tbody>
+        </thead>
+    </table>
+    <script>
+        function sub() {
+        let a = document.getElementById("i1").value
+        let b = document.getElementById("i2").value
+        let c = document.getElementById("t4").innerHTML = 29.99*a
+        let d = document.getElementById("td4").innerHTML = 12.99*b 
+        let t = document.getElementById("total").innerHTML = "$" + (c+d) 
+        }
+        function button1() {
+            let e = document.getElementById("i1").value = 0
+             let f = document.getElementById("t4").innerText = "$0"
+            let g = document.getElementById("i2").value = 0
+             let h = document.getElementById("td4").innerText = "$0"
+             let i = document.getElementById("total").innerText = "$0.00"
+        }
+    </script>
+</body>
+</html>
