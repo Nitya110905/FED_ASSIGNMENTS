@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a = new Date()
+        // document.write(a + "<br>");
+        // new Date(year,month,date,hours,minutes,seconds,milliseconds)
+        // let b = new Date(2024,1,1,23,4,50,10);
+        // document.write(b + "<br>")
+        // Function to get the current day and time
+function displayCurrentDayAndTime() {
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const now = new Date();
+
+    // Get the current day
+    const day = daysOfWeek[now.getDay()];
+
+    // Get the current time components
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const milliseconds = now.getMilliseconds();
+
+    // Determine AM or PM
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert hours from 24-hour to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+
+    // Format the time components with leading zeros if necessary
+    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+    const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+    // Display the current day and time
+    document.write(`Today is ${day}. <br>`);
+    document.write(`Current Time is ${hours} ${ampm} : ${formattedMinutes} : ${formattedSeconds}: ${milliseconds}`);
+}
+
+// Call the function to display the current day and time
+displayCurrentDayAndTime();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getFileExtension(filename) {
+    const lastDotIndex = filename.lastIndexOf('.');
+    if (lastDotIndex === -1) {
+        return ''; // No extension found
+    }
+    return filename.slice(lastDotIndex + 1);
+}
+
+// Example usage:
+const filename1 = 'document.txt';
+const filename2 = 'image.jpg';
+
+console.log(`Extension of ${filename1}: ${getFileExtension(filename1)}`);
+console.log(`Extension of ${filename2}: ${getFileExtension(filename2)}`);
+
+    </script>
+</body>
+</html>

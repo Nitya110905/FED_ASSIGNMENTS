@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th>MARKSHEET</th>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Kindly enter your marks</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>1. C</td>
+            <td><input type="number" id="on" min="0"></td>
+        </tr>
+        <tr>
+            <td>2. C++</td>
+            <td><input type="number" id="two" min="0"></td>
+        </tr>
+        <tr>
+            <td>3. Database</td>
+            <td><input type="number" id="three" min="0"></td>
+        </tr>
+        <tr>
+            <td>4. HTML</td>
+            <td><input type="number" id="four" min="0"></td>
+        </tr>
+        <tr>
+            <td>5. CSS</td>
+            <td><input type="number" id="five" min="0"></td>
+        </tr>
+        <tr>
+            <td>6. PHP</td>
+            <td><input type="number" id="six" min="0"></td>
+        </tr>
+        <tr>
+            <td>7. Core Java</td>
+            <td><input type="number" id="seven" min="0"></td>
+        </tr>
+        <tr>
+            <td><button onclick="one()">RESULT</button><br>total</td>
+            <td id="t">0</td>
+        </tr>
+        <tr>
+            <td>Percentage</td>
+            <td id="r">0</td>
+        </tr>
+    </table>
+    <script>
+        function one(){
+            on = document.getElementById("on").value
+            two = document.getElementById("two").value
+            three = document.getElementById("three").value
+            four = document.getElementById("four").value
+            five = document.getElementById("five").value
+            six = document.getElementById("six").value
+            seven = document.getElementById("seven").value
+            t = document.getElementById("t").innerHTML = `${parseInt(on)+parseInt(two)+parseInt(three)+parseInt(four)+parseInt(five)+parseInt(six)+parseInt(seven)}`
+            r = document.getElementById("r").innerHTML = `${parseFloat(100*t/700)} %`
+        }
+
+    </script>
+</body>
+</html>

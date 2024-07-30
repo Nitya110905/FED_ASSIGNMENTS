@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            height: 500px;
+            width: 50%;
+            /* justify-content: center; */
+            /* align-items: center; */
+            border: 2px solid black;
+            margin-top: 150px;
+            margin-left: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        .two{
+            /* background-color: aqua; */
+            height: 50px;
+            width: 90%;
+            margin: 20px;
+            text-align: center;
+        }
+        .three{
+            margin: 30px;
+            height: 50px;
+            width: 90%;
+            font-size: x-large;
+        }
+        input{
+            height: 30px;
+            width: 40%;
+            border-radius: 10px;
+        }
+        input:hover{
+            background-color: black;
+            color: white;
+        }
+        .four{
+            height: 100px;
+            /* background-color: antiquewhite; */
+            width: 90%;
+            margin: 50px 50px 0 50px;
+            font-size: x-large;
+            display: flex;
+            flex-direction: row;
+        }
+        .five{
+            /* background-color: aqua; */
+            height: inherit;
+            width: 40%;
+        }
+        button{
+            height: 30px;
+            width: 60px;
+            font-size: x-large;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .ans{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two"><h2>Maths Operations</h2></div>
+        <div class="three">Enter 1st No. &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="on" type="text"></div>
+        <div class="three">Enter 2nd No. &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="tw" type="text"></div>
+        <div class="four"><div class="five"><button onclick="add()">+</button>&nbsp;&nbsp;<button button onclick="sub()">-</button >&nbsp;&nbsp;<button button onclick="mul()">*</button><br><button button onclick="div()">/</button>&nbsp;&nbsp;<button button onclick="mod()">%</button></div>
+            <div class="ans" id="ans"></div>
+        </div>
+    </div>
+    <script>
+        const add = ()=>{
+            let a = document.getElementById("on").value;
+            let b = document.getElementById("tw").value;
+            let c = document.getElementById("ans").innerHTML = `Your Ans: ${parseInt(a) + parseInt(b)}`;
+        }
+        const sub = ()=>{
+            let a = document.getElementById("on").value;
+            let b = document.getElementById("tw").value;
+            let c = document.getElementById("ans").innerHTML = `Your Ans: ${parseInt(a) - parseInt(b)}`;
+        }
+        const mul = ()=>{
+            let a = document.getElementById("on").value;
+            let b = document.getElementById("tw").value;
+            let c = document.getElementById("ans").innerHTML = `Your Ans: ${parseInt(a) * parseInt(b)}`;
+        }
+        const div = ()=>{
+            let a = document.getElementById("on").value;
+            let b = document.getElementById("tw").value;
+            let c = document.getElementById("ans").innerHTML = `Your Ans: ${parseInt(a) / parseInt(b)}`;
+        }
+        const mod = ()=>{
+            let a = document.getElementById("on").value;
+            let b = document.getElementById("tw").value;
+            let c = document.getElementById("ans").innerHTML = `Your Ans: ${parseInt(a) % parseInt(b)}`;
+        }
+    </script>
+</body>
+</html>

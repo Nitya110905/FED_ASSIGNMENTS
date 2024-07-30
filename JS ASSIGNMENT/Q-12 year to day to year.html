@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <script>
+        findyear=(a)=>{
+            return a/365;
+        }
+        finddays = (b)=>{
+            return b*365;
+        }
+       var days =  prompt("Enter no. of days");
+       d = findyear(days);
+       document.getElementById("one").innerText = "Year =" + d;
+       var year = prompt("Enter no. of years");
+       y = finddays(year);
+       document.getElementById("two").innerText = "Days =" + y;
+    </script>
+</body>
+</html>

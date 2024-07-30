@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to convert an array of objects to CSV string
+function arrayToCSV(array) {
+    if (array.length === 0) {
+        return '';
+    }
+
+    // Extract the headers from the keys of the first object
+    const headers = Object.keys(array[0]);
+    const csvRows = [];
+
+    // Add the headers row
+    csvRows.push(headers.join(','));
+
+    // Add the data rows
+    for (const obj of array) {
+        const values = headers.map(header => obj[header]);
+        csvRows.push(values.join(','));
+    }
+
+    // Join all rows with newline character
+    return csvRows.join('<br>');
+}
+
+// Example usage
+const data = [
+    { name: 'Alice', age: 25, city: 'New York' },
+    { name: 'Bob', age: 30, city: 'Los Angeles' },
+    { name: 'Charlie', age: 35, city: 'Chicago' }
+];
+
+const csvString = arrayToCSV(data);
+document.write(csvString);
+
+    </script>
+</body>
+</html>

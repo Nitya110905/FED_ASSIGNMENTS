@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        capstr = (a)=>{
+            if(a.length === 0){
+                return ''
+            }
+            return a.charAt(0).toUpperCase() + a.slice(1);
+        }
+        let str = "hello";
+        let res = capstr(str);
+        document.write(res)
+    </script>
+</body>
+</html>

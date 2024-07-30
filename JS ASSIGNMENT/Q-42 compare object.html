@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        cmpobj = (one,two)=>{
+            let x = Object.keys(one);
+            let y = Object.keys(two);
+            // Check if the number of keys is different
+            if(x.length !== y.length){
+                return false;
+            }
+             // Check if values of each key are the same
+            for (const key of x) {
+                if(one[key] !== two[key]){
+                    return false;
+                }
+            }
+            return true;
+
+        }
+        let a = {name:"ABC",age:18}
+        let b = {name:"XYZ",age:17}
+        let c = {name:"ABC",age:18}
+       document.write(cmpobj(a,b) + "<br>");
+        document.write(cmpobj(a,c));
+    </script>
+</body>
+</html>

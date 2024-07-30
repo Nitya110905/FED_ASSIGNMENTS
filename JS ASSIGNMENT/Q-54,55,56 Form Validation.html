@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .one{
+            background-image: linear-gradient(to right, beige, pink);
+            height: 785px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .two{
+            height: 470px;
+            width: 25%;
+            background-color: rgba(128, 128, 128, 0.29);
+            margin-top: 150px;
+            border-top-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+        }
+        .three{
+            height: 70px;
+            width: 100%;
+            text-decoration:underline black;
+            color: rgba(0, 0, 0, 0.619);
+            text-align: center;
+            margin: 30px;
+            margin-left: 10px;
+        }
+        .four{
+            height: 70px;
+            /* background-color: white; */
+            margin-left: 10px;
+            color: black;
+        }
+        #i1{
+            width: 300px;
+            background-image: url();
+            background-position: left;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .five{
+            height: 70px;
+            /* background-color: white; */
+            margin-left: 10px;
+            color: black;
+        }
+        #i2{
+            width: 300px;
+        }
+        .six{
+            height: 70px;
+            /* background-color: white; */
+            margin-left: 10px;
+            color: black;
+        }
+        #i3{
+            width: 300px;
+        }
+        .seven{
+            height: 70px;
+            /* background-color: white; */
+            margin-left: 10px;
+            color: black;
+        }
+        #i4{
+            width: 300px;
+        }
+        .eight{
+            text-align: center;
+        }
+        #i5{
+            width: 55px;
+            height: 25px;
+            background-color: orange;
+            color: white;
+            border-color: orange;
+            
+        }
+        .nine,.ten,.elev,.twelv{
+            height: 15px;
+            width: 100%;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        .thir,.fort,.fift,.sixt{
+            height: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="three"><h2><u>FormGet</u></h2></div>
+            <form action="">
+                <div class="four">Full Name: <br><input type="text" id="i1" onblur="validData(this,'fnerror')" onkeydown="fnvalid(this,'ferror')" placeholder="Full Name" required>
+                    <div class="nine" id="fnerror"></div>
+                    <div class="thir" id="ferror"></div>
+                </div>
+                <div class="five">E-mail: <br> <input type="email" id="i2" onblur="validData(this,'emerror')" onkeydown="emvalid(this,'eerror')" placeholder="E-mail" required>
+                    <div class="ten" id="emerror"></div>
+                    <div class="fort" id="eerror"></div>
+                </div>
+                <div class="six">Contact Number: <br><input type="number" onblur="validData(this,'numerror')" id="i3" onkeydown="numvalid(this,'nerror')" placeholder="Contact Number" required>
+                    <div class="elev" id="numerror"></div>
+                    <div class="fift" id="nerror"></div>
+                </div>
+                <div class="seven">Address: <br><input type="text" onblur="validData(this,'adderror')" id="i4" onkeydown="addvalid(this,'aerror')" placeholder="Address" required>
+                    <div class="twelv" id="adderror"></div>
+                    <div class="sixt" id="aerror"></div>
+                </div>
+                <div class="eight"><input type="submit" id="i5"></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validData(input,msg){
+            if (input.value=="") {
+                document.getElementById(msg).style.color="red";
+                document.getElementById(msg).innerText="*Don't leave it blank";
+                return false;
+            }
+            else{
+                document.getElementById(msg).innerText="";
+                return true;
+            }
+        }
+        function fnvalid(input, msg) {
+            var name = /^[ a-zA-Z] /
+            if (name.test(input.value)) {
+                document.getElementById(msg).innertext = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "*Please enter valid name";
+                return false;
+            }
+        }
+        function emvalid(input,msg){
+            var email = /^([a-z0-9.-])+@+([a-z0-9-._]).([a-z]{3})/
+            if (email.test(input.value)) {
+                document.getElementById(msg).innertext = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "*Please enter valid Email";
+                return false;
+            }
+        }
+        function numvalid(input,msg){
+            var mob = /^[0-9]{10}/
+            if (mob.test(input.value)) {
+                document.getElementById(msg).innerText = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "*Please enter valid No.";
+                return false;
+            }
+        }
+        function addvalid(input,msg){
+            var address = /^([a-z0-9.-])+([a-z0-9-._]).([a-z]{50})/
+            if (address.test(input.value)) {
+                document.getElementById(msg).innertext = "";
+                return true;
+            }
+            else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "*Please enter valid address of max 50 characters";
+                return false;
+            }
+        }
+
+    </script>
+</body>
+</html>

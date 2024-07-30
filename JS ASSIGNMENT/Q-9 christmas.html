@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daysUntilChristmas() {
+  var today = new Date();
+  var currentYear = today.getFullYear();
+  var nextChristmas = new Date(currentYear, 11, 25); // Christmas is December 25
+
+  // If today is after Christmas this year, set next Christmas to next year
+  if (today.getMonth() == 11 && today.getDate() > 25) {
+    nextChristmas.setFullYear(currentYear + 1);
+  }
+
+  var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+  var diffDays = Math.round(Math.abs((nextChristmas.getTime() - today.getTime()) / oneDay));
+
+  return diffDays;
+}
+
+console.log(daysUntilChristmas() + " days left until Christmas!")
+    </script>
+</body>
+</html>
